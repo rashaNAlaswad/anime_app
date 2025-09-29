@@ -16,4 +16,8 @@ class AppImages {
   static const String conan = '${imageBasePath}conan.png';
   static const String hunter = '${imageBasePath}hunter.png';
   static const String dragonBall = '${imageBasePath}dragon_ball.png';
+
+  static const String gon = '${imageBasePath}gon.png';
+  static const String luffy = '${imageBasePath}luffy.png';
+  static const String naruto = '${imageBasePath}naruto.png';
 }

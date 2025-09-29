@@ -1,4 +1,5 @@
 import '../../features/home/domain/models/anime_model.dart';
+import '../../features/home/domain/models/character_model.dart';
 import '../constants/app_assets.dart';
 
 class DummyData {
@@ -50,4 +51,18 @@ class DummyData {
       ),
     ],
   };
+
+  static List<CharacterModel> get characters => [
+    CharacterModel(
+      name: 'Gon Freecss',
+      image: AppImages.gon,
+      series: 'Hunter x Hunter',
+    ),
+    CharacterModel(
+      name: 'Naruto Uzumaki',
+      image: AppImages.naruto,
+      series: 'Naruto',
+    ),
+    CharacterModel(name: 'Luffy', image: AppImages.luffy, series: 'One Piece'),
+  ];
 }
