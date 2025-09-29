@@ -9,4 +9,5 @@ class AppColors {
   static const Color grey = Color(0xFFAEADB5);
   static const Color drakBlue = Color(0xFF18153F);
   static const Color scafoldBackground = Color(0xffDDE2FF);
+  static const Color bottomSheetBackground = Color(0xff16103C);
 }
