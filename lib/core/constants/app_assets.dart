@@ -20,4 +20,6 @@ class AppImages {
   static const String gon = '${imageBasePath}gon.png';
   static const String luffy = '${imageBasePath}luffy.png';
   static const String naruto = '${imageBasePath}naruto.png';
+
+  static const String star = '${imageBasePath}star.png';
 }
