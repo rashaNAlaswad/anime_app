@@ -8,6 +8,7 @@ import '../../../../core/helper/spacing.dart';
 import '../widgets/filter_chips.dart';
 import '../widgets/category_items.dart';
 import '../widgets/top_characters_list.dart';
+import '../../../detailed/presentation/screens/detailes_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -57,7 +58,17 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                     ),
                     verticalSpace(20),
-                    CategoryItems(selectedCategory: selectedCategory),
+                    CategoryItems(
+                      selectedCategory: selectedCategory,
+                      onAnimeTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const DetailesScreen(),
+                          ),
+                        );
+                      },
+                    ),
                     verticalSpace(24),
                     Text(
                       'Top Characters',
