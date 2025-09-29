@@ -12,4 +12,22 @@ class AppTextStyles {
     fontWeight: AppFontWeight.semiBold,
     color: AppColors.white,
   );
+
+  static TextStyle font24DarkBlueBold = TextStyle(
+    fontSize: 24.sp,
+    fontWeight: AppFontWeight.bold,
+    color: AppColors.drakBlue,
+  );
+
+  static TextStyle font14darkBlueBold = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: AppFontWeight.bold,
+    color: AppColors.drakBlue,
+  );
+
+  static TextStyle font12greyMedium = TextStyle(
+    fontSize: 12.sp,
+    fontWeight: AppFontWeight.medium,
+    color: AppColors.grey,
+  );
 }

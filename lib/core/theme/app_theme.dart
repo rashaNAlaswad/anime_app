@@ -4,11 +4,11 @@ import 'app_colors.dart';
 
 ThemeData appTheme() {
   return ThemeData(
-    scaffoldBackgroundColor: AppColors.white,
+    scaffoldBackgroundColor: AppColors.scafoldBackground,
     primaryColor: AppColors.bluePrimary,
 
     appBarTheme: AppBarTheme(
-      backgroundColor: AppColors.white,
+      backgroundColor: AppColors.scafoldBackground,
       centerTitle: true,
       elevation: 0,
     ),
