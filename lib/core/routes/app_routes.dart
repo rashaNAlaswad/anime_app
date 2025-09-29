@@ -1,3 +1,4 @@
+import '../../features/detailed/presentation/screens/detailes_screen.dart';
 import '../../features/home/presentation/screens/home_screen.dart';
 import '../../features/navigations/navigation_screen.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +21,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SearchScreen());
       case Routes.setting:
         return MaterialPageRoute(builder: (_) => const SettingScreen());
+      case Routes.details:
+        return MaterialPageRoute(builder: (_) => const DetailesScreen());
     }
     return null;
   }
