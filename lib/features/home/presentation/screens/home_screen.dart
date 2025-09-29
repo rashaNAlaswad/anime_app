@@ -1,26 +1,47 @@
+import 'package:anime_ui/core/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/theme/app_colors.dart';
+import '../../../../core/helper/spacing.dart';
+import '../widgets/filter_chips.dart';
+import '../widgets/category_items.dart';
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  String selectedCategory = "All";
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text(
-              'Home Screen',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: AppColors.bluePrimary,
+      body: SafeArea(
+        child: Container(
+          padding: EdgeInsets.all(14),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                'Where Anime Comes Alive',
+                style: AppTextStyles.font24DarkBlueBold,
               ),
-            ),
-          ],
+              verticalSpace(24),
+              FilterChips(
+                onCategorySelected: (category) {
+                  setState(() {
+                    selectedCategory = category;
+                  });
+                },
+              ),
+              verticalSpace(20),
+              Expanded(
+                child: CategoryItems(selectedCategory: selectedCategory),
+              ),
+            ],
+          ),
         ),
       ),
     );
