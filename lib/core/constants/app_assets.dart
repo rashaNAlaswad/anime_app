@@ -7,6 +7,9 @@ class AppIcons {
   static const String category = '${svgBasePath}category.svg';
   static const String search = '${svgBasePath}search.svg';
   static const String setting = '${svgBasePath}setting.svg';
+
+  static const String preview = '${svgBasePath}preview.svg';
+  static const String watchNow = '${svgBasePath}watch_now.svg';
 }
 
 class AppImages {
@@ -22,4 +25,7 @@ class AppImages {
   static const String naruto = '${imageBasePath}naruto.png';
 
   static const String star = '${imageBasePath}star.png';
+
+  static const String detailsCover = '${imageBasePath}details_cover.png';
+  static const String demonSlayer = '${imageBasePath}demon_slayer.png';
 }
