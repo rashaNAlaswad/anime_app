@@ -38,11 +38,11 @@ class _NavigationScreenState extends State<NavigationScreen> {
       stateManagement: true,
       hideNavigationBarWhenKeyboardAppears: true,
       navBarHeight: 70,
-      backgroundColor: Colors.white,
+      backgroundColor: AppColors.scafoldBackground,
       navBarStyle: NavBarStyle.style7,
       decoration: NavBarDecoration(
         borderRadius: BorderRadius.circular(20),
-        colorBehindNavBar: Colors.white,
+        colorBehindNavBar: AppColors.scafoldBackground,
       ),
     );
   }
