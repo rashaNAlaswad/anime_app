@@ -30,4 +30,16 @@ class AppTextStyles {
     fontWeight: AppFontWeight.medium,
     color: AppColors.grey,
   );
+
+  static TextStyle font24blackBold = TextStyle(
+    fontSize: 24.sp,
+    fontWeight: AppFontWeight.bold,
+    color: AppColors.black,
+  );
+
+  static TextStyle font16blackSemiBold = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: AppFontWeight.semiBold,
+    color: AppColors.black,
+  );
 }
