@@ -1,0 +1,32 @@
+name: anime_ui
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Responsive Design
+  flutter_screenutil: ^5.9.3
+
+  # SVG library for rendering painting
+  flutter_svg: ^2.2.1
+
+  # Persistent bottom navigation bar
+  persistent_bottom_nav_bar: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/svgs/
