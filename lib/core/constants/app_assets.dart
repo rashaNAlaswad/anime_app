@@ -12,6 +12,8 @@ class AppIcons {
   static const String watchNow = '${svgBasePath}watch_now.svg';
   static const String clap = '${svgBasePath}clap.svg';
   static const String seasons = '${svgBasePath}seasons.svg';
+
+  static const String exit = '${svgBasePath}close.svg';
 }
 
 class AppImages {
@@ -30,4 +32,7 @@ class AppImages {
 
   static const String detailsCover = '${imageBasePath}details_cover.png';
   static const String demonSlayer = '${imageBasePath}demon_slayer.png';
+
+  static const String rocketBoy = '${imageBasePath}rocket_boy.png';
+  static const String files = '${imageBasePath}files.png';
 }
