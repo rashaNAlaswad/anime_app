@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
 import '../../core/constants/app_assets.dart';
+import '../../core/constants/app_dimensions.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_text_styles.dart';
 import '../home/presentation/screens/home_screen.dart';
@@ -38,11 +39,11 @@ class _NavigationScreenState extends State<NavigationScreen> {
       stateManagement: true,
       hideNavigationBarWhenKeyboardAppears: true,
       navBarHeight: 70,
-      backgroundColor: AppColors.scafoldBackground,
+      backgroundColor: AppColors.scaffoldBackground,
       navBarStyle: NavBarStyle.style7,
       decoration: NavBarDecoration(
         borderRadius: BorderRadius.circular(20),
-        colorBehindNavBar: AppColors.scafoldBackground,
+        colorBehindNavBar: AppColors.scaffoldBackground,
       ),
     );
   }
@@ -83,7 +84,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
       activeColorPrimary: AppColors.bluePrimary,
       activeColorSecondary: Colors.white,
       inactiveColorPrimary: AppColors.grey,
-      iconSize: 20,
+      iconSize: AppDimensions.mediumIconSize,
     );
   }
 }
