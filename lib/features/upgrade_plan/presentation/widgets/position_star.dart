@@ -1,5 +1,6 @@
-import '../../../../core/constants/app_assets.dart';
 import 'package:flutter/material.dart';
+
+import '../../../../core/constants/app_assets.dart';
 
 class PositionStar extends StatelessWidget {
   const PositionStar({super.key, this.top, this.left, this.right, this.bottom});

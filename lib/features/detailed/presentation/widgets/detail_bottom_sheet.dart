@@ -1,9 +1,9 @@
-import '../../../upgrade_plan/presentation/screens/upgrade_plan_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_assets.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/widgets/app_button.dart';
+import '../../../upgrade_plan/presentation/screens/upgrade_plan_screen.dart';
 
 class DetailBottomSheet extends StatelessWidget {
   const DetailBottomSheet({super.key});

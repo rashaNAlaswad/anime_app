@@ -1,6 +1,6 @@
 import '../../../../core/widgets/app_button.dart';
 import '../widgets/position_star.dart';
-import '../widgets/top_screen.dart';
+import '../widgets/header_section.dart';
 import '../widgets/upgrade_plan_button.dart';
 import 'package:flutter/material.dart';
 
@@ -26,7 +26,7 @@ class _UpgradePlanScreenState extends State<UpgradePlanScreen> {
                 child: Column(
                   spacing: 35,
                   children: [
-                    TopScreen(),
+                    HeaderSection(),
                     UpgradePlanButton(),
                     AppButton(text: "Continue", onTap: () {}),
                   ],
