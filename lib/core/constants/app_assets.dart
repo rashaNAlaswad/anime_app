@@ -10,6 +10,8 @@ class AppIcons {
 
   static const String preview = '${svgBasePath}preview.svg';
   static const String watchNow = '${svgBasePath}watch_now.svg';
+  static const String clap = '${svgBasePath}clap.svg';
+  static const String seasons = '${svgBasePath}seasons.svg';
 }
 
 class AppImages {
