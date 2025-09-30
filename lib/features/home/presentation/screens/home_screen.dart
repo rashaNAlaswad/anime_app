@@ -1,14 +1,13 @@
-import 'package:anime_ui/core/constants/app_assets.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-
-import '../../../../core/theme/app_text_styles.dart';
 import 'package:flutter/material.dart';
+import 'package:persistent_bottom_nav_bar/persistent_bottom_nav_bar.dart';
 
 import '../../../../core/helper/spacing.dart';
+import '../../../../core/theme/app_text_styles.dart';
+import '../../../detailed/presentation/screens/details_screen.dart';
+import '../widgets/anime_list.dart';
 import '../widgets/filter_chips.dart';
-import '../widgets/category_items.dart';
-import '../widgets/top_characters_list.dart';
-import '../../../detailed/presentation/screens/detailes_screen.dart';
+import '../widgets/star_background.dart';
+import '../widgets/characters_list.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -25,19 +24,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          Positioned(
-            top: -50.h,
-            right: -150.w,
-            child: Transform.rotate(
-              angle: 0.3,
-              child: Image.asset(
-                AppImages.star,
-                width: 400.w,
-                height: 400.h,
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
+          StarBackground(),
           SafeArea(
             child: SingleChildScrollView(
               child: Container(
@@ -58,14 +45,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       },
                     ),
                     verticalSpace(20),
-                    CategoryItems(
+                    AnimeList(
                       selectedCategory: selectedCategory,
                       onAnimeTap: () {
-                        Navigator.push(
+                        PersistentNavBarNavigator.pushNewScreen(
                           context,
-                          MaterialPageRoute(
-                            builder: (context) => const DetailesScreen(),
-                          ),
+                          screen: const DetailsScreen(),
+                          withNavBar: false,
+                          pageTransitionAnimation:
+                              PageTransitionAnimation.cupertino,
                         );
                       },
                     ),
@@ -75,8 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       style: AppTextStyles.font24blackBold,
                     ),
                     verticalSpace(24),
-                    TopCharactersList(),
-                    verticalSpace(28),
+                    CharactersList(),
                   ],
                 ),
               ),

@@ -28,35 +28,39 @@ class _FilterChipsState extends State<FilterChips> {
         itemCount: filters.length,
         itemBuilder: (context, index) {
           final item = filters[index];
-          return FilterChip(
-            label: Text(item),
-            labelPadding: EdgeInsets.fromLTRB(12, 6, 12, 6),
-            labelStyle: selected == item
-                ? AppTextStyles.font14whiteSemiBold.copyWith(
-                    color: AppColors.white,
-                    fontWeight: FontWeight.bold,
-                  )
-                : AppTextStyles.font14whiteSemiBold.copyWith(
-                    color: AppColors.bluePrimary,
-                    fontWeight: FontWeight.bold,
-                  ),
-            shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(100.r),
-              side: BorderSide(color: AppColors.white),
-            ),
-            selectedColor: AppColors.bluePrimary,
-            showCheckmark: false,
-            selected: selected == item,
-            onSelected: (value) {
-              setState(() {
-                selected = item;
-              });
-              widget.onCategorySelected(item);
-            },
-          );
+          return _buildFilterChip(item);
         },
         separatorBuilder: (_, __) => horizontalSpace(4.w),
       ),
+    );
+  }
+
+  FilterChip _buildFilterChip(String item) {
+    return FilterChip(
+      label: Text(item),
+      labelPadding: EdgeInsets.fromLTRB(12, 6, 12, 6),
+      labelStyle: selected == item
+          ? AppTextStyles.font14whiteSemiBold.copyWith(
+              color: AppColors.white,
+              fontWeight: FontWeight.bold,
+            )
+          : AppTextStyles.font14whiteSemiBold.copyWith(
+              color: AppColors.bluePrimary,
+              fontWeight: FontWeight.bold,
+            ),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(100.r),
+        side: BorderSide(color: AppColors.white),
+      ),
+      selectedColor: AppColors.bluePrimary,
+      showCheckmark: false,
+      selected: selected == item,
+      onSelected: (value) {
+        setState(() {
+          selected = item;
+        });
+        widget.onCategorySelected(item);
+      },
     );
   }
 }

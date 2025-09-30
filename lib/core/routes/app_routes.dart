@@ -1,9 +1,9 @@
-import '../../features/detailed/presentation/screens/detailes_screen.dart';
-import '../../features/home/presentation/screens/home_screen.dart';
-import '../../features/navigations/navigation_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../features/category/presentation/screens/category_screen.dart';
+import '../../features/detailed/presentation/screens/details_screen.dart';
+import '../../features/home/presentation/screens/home_screen.dart';
+import '../../features/navigations/navigation_screen.dart';
 import '../../features/profile/presentation/screens/setting_screen.dart';
 import '../../features/search/presentation/screens/search_screen.dart';
 import 'routes.dart';
@@ -22,7 +22,7 @@ class AppRouter {
       case Routes.setting:
         return MaterialPageRoute(builder: (_) => const SettingScreen());
       case Routes.details:
-        return MaterialPageRoute(builder: (_) => const DetailesScreen());
+        return MaterialPageRoute(builder: (_) => const DetailsScreen());
     }
     return null;
   }

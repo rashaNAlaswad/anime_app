@@ -5,8 +5,8 @@ import '../../../../core/helper/spacing.dart';
 import '../../../../core/utils/dummy_data.dart';
 import 'character_item.dart';
 
-class TopCharactersList extends StatelessWidget {
-  const TopCharactersList({super.key});
+class CharactersList extends StatelessWidget {
+  const CharactersList({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class TopCharactersList extends StatelessWidget {
       child: ListView.separated(
         scrollDirection: Axis.horizontal,
         itemCount: items.length,
-        itemBuilder: (context, index) => CharacterItem(item: items[index]),
+        itemBuilder: (context, index) => CharacterItem(character: items[index]),
         separatorBuilder: (context, index) => horizontalSpace(12),
       ),
     );
