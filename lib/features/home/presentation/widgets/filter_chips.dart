@@ -38,7 +38,7 @@ class _FilterChipsState extends State<FilterChips> {
   FilterChip _buildFilterChip(String item) {
     return FilterChip(
       label: Text(item),
-      labelPadding: EdgeInsets.fromLTRB(12, 6, 12, 6),
+      labelPadding: EdgeInsets.fromLTRB(18, 8, 18, 8),
       labelStyle: selected == item
           ? AppTextStyles.font14whiteSemiBold.copyWith(
               color: AppColors.white,
