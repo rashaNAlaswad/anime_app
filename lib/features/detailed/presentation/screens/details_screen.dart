@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/constants/app_assets.dart';
+import '../widgets/anime_info_section.dart';
 import '../widgets/cover_image.dart';
 import '../widgets/detail_bottom_sheet.dart';
-import '../widgets/anime_info_section.dart';
 
 class DetailsScreen extends StatelessWidget {
   const DetailsScreen({super.key});
