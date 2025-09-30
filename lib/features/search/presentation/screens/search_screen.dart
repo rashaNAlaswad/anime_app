@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../../../core/theme/app_colors.dart';
+import '../../../../core/helper/spacing.dart';
+import '../../../../core/theme/app_text_styles.dart';
 
 class SearchScreen extends StatelessWidget {
   const SearchScreen({super.key});
@@ -8,22 +9,15 @@ class SearchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'Search Screen',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: AppColors.bluePrimary,
-              ),
-            ),
-            SizedBox(height: 8),
+            Text('Search Screen', style: AppTextStyles.font24DarkBlueBold),
+            verticalSpace(8),
             Text(
               'Find your favorite anime here',
-              style: TextStyle(fontSize: 16, color: Colors.grey),
+              style: AppTextStyles.font12greyMedium.copyWith(fontSize: 16),
             ),
           ],
         ),

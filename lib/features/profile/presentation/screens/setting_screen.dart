@@ -1,6 +1,7 @@
+import '../../../../core/helper/spacing.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../core/theme/app_colors.dart' show AppColors;
+import '../../../../core/theme/app_text_styles.dart';
 
 class SettingScreen extends StatelessWidget {
   const SettingScreen({super.key});
@@ -8,22 +9,15 @@ class SettingScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const Center(
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              'Setting Screen',
-              style: TextStyle(
-                fontSize: 24,
-                fontWeight: FontWeight.bold,
-                color: AppColors.bluePrimary,
-              ),
-            ),
-            SizedBox(height: 8),
+            Text('Setting Screen', style: AppTextStyles.font24DarkBlueBold),
+            verticalSpace(8),
             Text(
               'Manage your account settings',
-              style: TextStyle(fontSize: 16, color: Colors.grey),
+              style: AppTextStyles.font12greyMedium.copyWith(fontSize: 16),
             ),
           ],
         ),
