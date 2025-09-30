@@ -6,6 +6,7 @@ import '../../features/home/presentation/screens/home_screen.dart';
 import '../../features/navigations/navigation_screen.dart';
 import '../../features/profile/presentation/screens/setting_screen.dart';
 import '../../features/search/presentation/screens/search_screen.dart';
+import '../../features/upgrade_plan/presentation/screens/upgrade_plan_screen.dart';
 import 'routes.dart';
 
 class AppRouter {
@@ -23,6 +24,8 @@ class AppRouter {
         return MaterialPageRoute(builder: (_) => const SettingScreen());
       case Routes.details:
         return MaterialPageRoute(builder: (_) => const DetailsScreen());
+      case Routes.upgradePlan:
+        return MaterialPageRoute(builder: (_) => const UpgradePlanScreen());
     }
     return null;
   }

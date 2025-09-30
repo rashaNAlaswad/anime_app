@@ -1,3 +1,4 @@
+import '../../../upgrade_plan/presentation/screens/upgrade_plan_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../core/constants/app_assets.dart';
@@ -28,7 +29,14 @@ class DetailBottomSheet extends StatelessWidget {
               text: 'Watch Now',
               iconPath: AppIcons.watchNow,
               isPrimary: true,
-              onTap: () {},
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const UpgradePlanScreen(),
+                  ),
+                );
+              },
             ),
           ),
         ],
