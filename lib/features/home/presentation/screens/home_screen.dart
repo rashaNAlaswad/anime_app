@@ -5,9 +5,9 @@ import '../../../../core/helper/spacing.dart';
 import '../../../../core/theme/app_text_styles.dart';
 import '../../../detailed/presentation/screens/details_screen.dart';
 import '../widgets/anime_list.dart';
+import '../widgets/characters_list.dart';
 import '../widgets/filter_chips.dart';
 import '../widgets/star_background.dart';
-import '../widgets/characters_list.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

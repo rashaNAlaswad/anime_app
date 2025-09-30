@@ -6,10 +6,10 @@ import '../../core/constants/app_assets.dart';
 import '../../core/constants/app_dimensions.dart';
 import '../../core/theme/app_colors.dart';
 import '../../core/theme/app_text_styles.dart';
-import '../home/presentation/screens/home_screen.dart';
-import '../search/presentation/screens/search_screen.dart';
 import '../category/presentation/screens/category_screen.dart';
+import '../home/presentation/screens/home_screen.dart';
 import '../profile/presentation/screens/setting_screen.dart';
+import '../search/presentation/screens/search_screen.dart';
 
 class NavigationScreen extends StatefulWidget {
   const NavigationScreen({super.key});
