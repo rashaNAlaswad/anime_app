@@ -55,4 +55,16 @@ class AppTextStyles {
     fontWeight: AppFontWeight.medium,
     color: AppColors.white,
   );
+
+  static TextStyle font14greyMedium = GoogleFonts.raleway(
+    fontSize: 14.sp,
+    fontWeight: AppFontWeight.medium,
+    color: AppColors.grey,
+  );
+
+  static TextStyle font14whiteiBold = GoogleFonts.raleway(
+    fontSize: 14.sp,
+    fontWeight: AppFontWeight.bold,
+    color: AppColors.white,
+  );
 }
