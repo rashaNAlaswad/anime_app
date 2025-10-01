@@ -2,7 +2,7 @@
 
 A modern Flutter application implementing a beautiful anime streaming interface. This project showcases three main screens designed from Figma, featuring responsive design, custom widgets, and a well-structured codebase.
 
-## 📱 Screenshots
+## 📱 Screens
 
 The app includes three main screens:
 - **Home Screen** - Anime discovery with categories and character showcases
