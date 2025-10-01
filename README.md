@@ -10,3 +10,6 @@ The app includes three main screens:
 - **Upgrade Plan Screen** - Premium subscription interface with animated elements
 
 
+## 🎥 Video
+
+https://github.com/user-attachments/assets/3f13070c-2a74-44ca-bdd5-b1f4676ce4c7
